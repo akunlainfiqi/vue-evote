@@ -1,29 +1,51 @@
-<script setup>
-import ButtonRepo from '@/components/ButtonRepo.vue'
-</script>
-
 <template>
-  <div class="bg-gray-50">
-    <div
-      class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
-    >
-      <h2
-        class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-      >
-        Ready to dive in?
-        <br />
-        <span class="text-indigo-600">Vite + Vue 3 + Tailwind CSS</span>
-      </h2>
-      <div class="flex mt-8 lg:flex-shrink-0 lg:mt-0">
-        <div class="inline-flex rounded-md shadow">
-          <router-link
-            to="/about"
-            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none"
-            >Next Page</router-link
-          >
+    <div class="min-w-full">
+        <div class="inline-grid min-w-full grid-cols-3 text-center h-1/3 bg-slate-500">
+            <div class="h-96">calon 1</div>
+            <div>calon 2</div>
+            <div>calon 3</div>
         </div>
-        <ButtonRepo />
-      </div>
+        <div class="bg-main">
+            <div
+                class="flex flex-col px-4 py-16 mx-auto font-bold text-white align-middle max-w-7xl sm:px-6 lg:px-8 font-Montserrat">
+                <h3 class="text-2xl font-normal font-DMsans">Sedang berlangsung</h3>
+                <h1 class="pb-5 text-5xl">Pemilihan Ketua Organisasi</h1>
+                <div class="flex flex-row items-center text-5xl align-middle">
+                    <div class="flex items-center justify-center w-24 h-24 bg-gradient-2a rounded-2xl">
+                        <h1 class="flex">69</h1>
+                    </div> : 
+                    <div class="flex items-center justify-center w-24 h-24 bg-gradient-2a rounded-2xl">
+                        <h1 class="flex">69</h1>
+                    </div>:
+                    <div class="flex items-center justify-center w-24 h-24 bg-gradient-2a rounded-2xl">
+                        <h1 class="flex">69</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative h-72 bg-gradient-2b shadow-inner-fix">
+            <div class="absolute w-full h-full opacity-40 bg-neutral-300"></div>
+            <div class="relative flex flex-row-reverse items-center h-full mx-auto backdrop-filter backdrop-blur-xl max-w-7xl">
+                <div class="flex items-center justify-center h-24 text-xl font-bold text-center bg-white w-72 rounded-3xl font-Montserrat">
+                    Calon-Calon Ketua Organisasi
+                </div>
+            </div>
+        </div>
+        <div class="relative bg-white h-72 shadow-inner-fix">
+            <div class="absolute w-full h-full opacity-40 bg-neutral-300"></div>
+            <div class="relative flex flex-row items-center h-full mx-auto backdrop-filter backdrop-blur-xl max-w-7xl">
+                <div class="flex items-center justify-center h-24 text-xl font-bold text-center bg-white w-72 rounded-3xl font-Montserrat">
+                    Lihat Timeline
+                </div>
+            </div>
+        </div>
+        <div class="relative bg-orange-400 h-72 shadow-inner-fix">
+            <div class="absolute w-full h-full opacity-40 bg-neutral-300"></div>
+            <div class="relative flex flex-row-reverse items-center h-full mx-auto backdrop-filter backdrop-blur-xl max-w-7xl">
+                <div class="flex items-center justify-center h-24 text-xl font-bold text-center bg-white w-72 rounded-3xl font-Montserrat">
+                    Voting Sekarang
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </template>

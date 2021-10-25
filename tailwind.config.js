@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
-        Montserrat: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
+        'Poppins': ['"Poppins"', ...defaultTheme.fontFamily.sans],
+        'Montserrat': ['"Montserrat"', ...defaultTheme.fontFamily.sans],
+        'DMsans': ['"DM sans"', ...defaultTheme.fontFamily.sans]
       },
       colors:{
         'main': '#13004A',
@@ -20,6 +21,9 @@ module.exports = {
         'text-tertiary': '#C6C6DE',
         'accent': '#D8DCFE'
       },
+      boxShadow:{
+        'inner-fix': 'inset -10rem 0 10rem 15px rgba(0,0,0,0.25)',
+      }
     },
   },
   plugins: [
