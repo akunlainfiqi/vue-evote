@@ -1,5 +1,5 @@
 <template>
-    <div class="self-center bg-blue-50">
+    <div class="self-center">
         <div>
             <VoteCard></VoteCard>
         </div>
