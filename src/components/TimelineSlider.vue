@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <vueper-slides autoplay>
       <vueper-slide
         v-for="i of 10"

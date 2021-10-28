@@ -1,4 +1,5 @@
 <template>
+<div>
 	<div class="flex justify-evenly">
 		<!-- Calon 1 -->
 		<div class="flex flex-col bg-white rounded-3xl m-2 w-80 shadow-md">
@@ -33,14 +34,15 @@
 				<h4 class="ml-4 text-2xl font-semibold">Kai Havertz</h4></div>
 			<div class="flex flex-row justify-between mr-1 ml-1">
 				<a class="p-2 ml-24 text-s mt-3 underline" href="">Lihat Kampanye</a>
-				<a class="pt-3 pb-3 pl-5 pr-5 mr-2 mb-4 leading-none rounded-3xl font-medium mt-3 bg-main text-xs text-white" href="#">Vote</a>
+				<button v-on:click="showModal = !showModal" class="pt-3 pb-3 pl-5 pr-5 mr-2 mb-4 leading-none rounded-3xl font-medium mt-3 bg-main text-xs text-white">Vote</button>
 			</div>
 		</div>
 
-</div>
 
-    <button v-on:click="showModal = !showModal"></button>
-    <VoteConfirmation v-if="showModal"></VoteConfirmation>
+    <!-- <button v-on:click="showModal = !showModal">tes</button> -->
+</div>
+<VoteConfirmation v-if="showModal"></VoteConfirmation>
+</div>
 </template>
 
 <script setup>
