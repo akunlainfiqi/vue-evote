@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
   <div class="flex flex-col justify-between min-h-screen">
     <header class="bg-white shadow" v-if="$route.meta.title !=='login'">
@@ -9,12 +6,13 @@
           <a href="/">
             <img src="@/assets/logo.png" alt="logo evote" srcset="">
           </a>
-          <div class="inline-grid grid-cols-4 text-xl font-medium text-center font-Poppins">
+          <div class="hidden grid-cols-4 text-xl font-medium text-center font-Poppins md:inline-grid">
             <a href="Calon" class="px-4">Calon</a>
             <a href="Timeline" class="px-4">Timeline</a>
             <a href="Vote" class="px-4">Voting</a>
             <a href="Login" class="px-4">Login</a>
           </div>
+          <NavbarMenu class="inline md:hidden"></NavbarMenu>
         </div>
       </div>
     </header>
@@ -31,3 +29,7 @@
     </footer>
   </div>
 </template>
+
+<script setup>
+import NavbarMenu from '@/components/NavbarMenu.vue';
+</script>
