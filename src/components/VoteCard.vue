@@ -8,9 +8,9 @@
 				background-position: top;"></div>
 			<div class="flex flex-col mt-4">
 				<h4 class="ml-4 text-3xl font-bold font-Montserrat">Nadin Amizah</h4></div>
-			<div class="flex flex-row justify-between ml-1 mr-1">
-				<a class="p-2 mt-3 ml-24 underline text-s" href="">Lihat Kampanye</a>
-				<button v-on:click="showModal = !showModal" class="pt-3 pb-3 pl-5 pr-5 mt-3 mb-4 mr-2 text-xs font-medium leading-none text-white rounded-xl bg-main">Vote</button>
+			<div class="flex flex-row-reverse">
+				<button v-on:click="showModal = !showModal" class="px-5 py-3 mt-3 mb-4 mr-4 text-lg font-medium leading-none text-white rounded-xl bg-main">Vote</button>
+				<a class="p-2 mt-3 underline text-md" href="">Lihat Kampanye</a>
 			</div>
 		</div>
 		<!-- Calon 2 -->
@@ -20,9 +20,9 @@
 				background-position: top;"></div>
 			<div class="flex flex-col mt-4">
 				<h4 class="ml-4 text-3xl font-bold font-Montserrat">Ronaldo</h4></div>
-			<div class="flex flex-row justify-between ml-1 mr-1">
-				<a class="p-2 mt-3 ml-24 underline text-s" href="">Lihat Kampanye</a>
-				<button v-on:click="showModal = !showModal" class="pt-3 pb-3 pl-5 pr-5 mt-3 mb-4 mr-2 text-xs font-medium leading-none text-white rounded-xl bg-main">Vote</button>
+			<div class="flex flex-row-reverse">
+				<button v-on:click="showModal = !showModal" class="px-5 py-3 mt-3 mb-4 mr-4 text-lg font-medium leading-none text-white rounded-xl bg-main">Vote</button>
+				<a class="p-2 mt-3 underline text-md" href="">Lihat Kampanye</a>
 			</div>
 		</div>
 		<!-- Calon 3 -->
@@ -32,9 +32,9 @@
 				background-position: top;"></div>
 			<div class="flex flex-col mt-4">
 				<h4 class="ml-4 text-3xl font-bold font-Montserrat">Kai Havertz</h4></div>
-			<div class="flex flex-row justify-between ml-1 mr-1">
-				<a class="p-2 mt-3 ml-24 underline text-s" href="">Lihat Kampanye</a>
-				<button v-on:click="showModal = !showModal" class="pt-3 pb-3 pl-5 pr-5 mt-3 mb-4 mr-2 text-xs font-medium leading-none text-white rounded-xl bg-main">Vote</button>
+			<div class="flex flex-row-reverse">
+				<button v-on:click="showModal = !showModal" class="px-5 py-3 mt-3 mb-4 mr-4 text-lg font-medium leading-none text-white rounded-xl bg-main">Vote</button>
+				<a class="p-2 mt-3 underline text-md" href="">Lihat Kampanye</a>
 			</div>
 		</div>
 

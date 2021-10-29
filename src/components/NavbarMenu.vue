@@ -20,23 +20,33 @@
         >
           <div class="px-1 py-1">
             <MenuItem v-slot="{ active }">
-              <button
+              <button @click="$router.push('/Calon')"
                 :class="[
                   active ? 'bg-violet-500 text-white' : 'text-gray-900',
                   'group flex rounded-md items-center w-full px-2 py-2 text-sm',
                 ]"
               >
-                Edit
+                Calon
               </button>
             </MenuItem>
             <MenuItem v-slot="{ active }">
-              <button
+              <button @click="$router.push('/timeline')"
                 :class="[
                   active ? 'bg-violet-500 text-white' : 'text-gray-900',
                   'group flex rounded-md items-center w-full px-2 py-2 text-sm',
                 ]"
               >
-                Duplicate
+                Timeline
+              </button>
+            </MenuItem>
+            <MenuItem v-slot="{ active }">
+              <button @click="$router.push('/Vote')"
+                :class="[
+                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
+                  'group flex rounded-md items-center w-full px-2 py-2 text-sm',
+                ]"
+              >
+                Voting
               </button>
             </MenuItem>
           </div>
@@ -48,30 +58,17 @@
                   'group flex rounded-md items-center w-full px-2 py-2 text-sm',
                 ]"
               >
-                Archive
+                Setting
               </button>
             </MenuItem>
             <MenuItem v-slot="{ active }">
-              <button
+              <button @click="$router.push('/Login')"
                 :class="[
                   active ? 'bg-violet-500 text-white' : 'text-gray-900',
                   'group flex rounded-md items-center w-full px-2 py-2 text-sm',
                 ]"
               >
-                Move
-              </button>
-            </MenuItem>
-          </div>
-
-          <div class="px-1 py-1">
-            <MenuItem v-slot="{ active }">
-              <button
-                :class="[
-                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                  'group flex rounded-md items-center w-full px-2 py-2 text-sm',
-                ]"
-              >
-                Delete
+                Logout
               </button>
             </MenuItem>
           </div>
