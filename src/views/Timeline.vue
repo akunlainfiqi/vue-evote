@@ -1,8 +1,8 @@
 <template>
     <div class="self-center mx-auto max-w-7xl">
-        <div class="flex flex-row">
+        <div class="flex flex-col md:flex-row">
             <TimelineGraph class="flex-shrink-0"></TimelineGraph>
-            <TimelineSlider class="ml-8 overflow-auto overscroll-auto"></TimelineSlider>
+            <TimelineSlider class="overflow-auto md:ml-8 overscroll-auto"></TimelineSlider>
         </div>
     </div>
 </template>
