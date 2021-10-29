@@ -1,9 +1,9 @@
 <template>
   <div class="w-56 text-right top-16">
     <Menu as="div" class="relative inline-block text-left">
-      <div>
+      <div class="flex h-full my-auto">
         <MenuButton>
-        <MenuIcon class="w-9 h-9 text-gradient-1a"/>
+          <MenuIcon class="h-full w-9 text-gradient-1a"/>
         </MenuButton>
       </div>
 
@@ -22,7 +22,7 @@
             <MenuItem v-slot="{ active }">
               <button @click="$router.push('/Calon')"
                 :class="[
-                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
+                  active ? 'bg-gradient-1a text-white' : 'text-gray-900',
                   'group flex rounded-md items-center w-full px-2 py-2 text-sm',
                 ]"
               >
@@ -32,7 +32,7 @@
             <MenuItem v-slot="{ active }">
               <button @click="$router.push('/timeline')"
                 :class="[
-                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
+                  active ? 'bg-gradient-1a text-white' : 'text-gray-900',
                   'group flex rounded-md items-center w-full px-2 py-2 text-sm',
                 ]"
               >
@@ -42,7 +42,7 @@
             <MenuItem v-slot="{ active }">
               <button @click="$router.push('/Vote')"
                 :class="[
-                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
+                  active ? 'bg-gradient-1a text-white' : 'text-gray-900',
                   'group flex rounded-md items-center w-full px-2 py-2 text-sm',
                 ]"
               >
@@ -54,7 +54,7 @@
             <MenuItem v-slot="{ active }">
               <button
                 :class="[
-                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
+                  active ? 'bg-gradient-1a text-white' : 'text-gray-900',
                   'group flex rounded-md items-center w-full px-2 py-2 text-sm',
                 ]"
               >
@@ -64,7 +64,7 @@
             <MenuItem v-slot="{ active }">
               <button @click="$router.push('/Login')"
                 :class="[
-                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
+                  active ? 'bg-gradient-1a text-white' : 'text-gray-900',
                   'group flex rounded-md items-center w-full px-2 py-2 text-sm',
                 ]"
               >

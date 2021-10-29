@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col mx-auto lg:flex-row max-w-7xl">
     <div v-for="item in items" v-bind:key="item.id" class="mx-auto">
         <div class="flex flex-row w-full max-w-xl m-2 mx-auto bg-white shadow-md lg:flex-col rounded-3xl lg:w-80">
             <img :src="item.URLFoto" class="object-cover w-40 h-40 lg:h-80 lg:w-80 rounded-3xl">
